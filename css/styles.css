@@ -187,6 +187,11 @@ button {
   }
 
 
+  .link:hover,
+  .link:focus {
+      color: var(--link-hover-color);
+  }
+
 .link-nav .link.current {
     color: var(--link-hover-color);
     letter-spacing: 0.02em;
@@ -511,7 +516,8 @@ button {
 }
 
 
-.social-list-item-link:hover {
+.social-list-item-link:hover,
+.social-list-item-link:focus {
     background-color: var(--link-hover-color);
     --color1: #FFFFFF;
 }
@@ -705,7 +711,8 @@ button {
        background-color: rgba(255, 255, 255, 0.1);
      
 }
-.connect-item:hover {
+.connect-item:hover
+.connect-item:focus {
     background-color: #2196F3;
 }
 /* ---------------------------footer happy end------------------------------------- */
@@ -817,7 +824,8 @@ button {
   }
 
 
-  .li-portfolio:hover .overlay {
+  .li-portfolio:hover .overlay,
+  .li-portfolio:focus .overlay {
     transform: translatex(0);
     visibility: visible;
   }
@@ -826,7 +834,8 @@ button {
     text-decoration: none;
 }
 
-.li-portfolio:hover {
+.li-portfolio:hover,
+.li-portfolio:focus {
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
