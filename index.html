@@ -312,6 +312,7 @@
                 </li>
             </ul>
          </div>
+
      </section>
         
 </main>
@@ -319,7 +320,7 @@
 <footer class="footer ">
     <section class="container joint">
         <div style="margin-right: 70px;">
-         <h2 class="logo-footer-h2"><a href="./index.html" class="logoweb-footer"><span class="logoweb-color">Web</span>Studio</a></h2>
+             <h2 class="logo-footer-h2"><a href="./index.html" class="logoweb-footer"><span class="logoweb-color">Web</span>Studio</a></h2>
                     <address class="adress-footer">
                      <a class="address" href="https://goo.gl/maps/b1sm8KnPufPkhiFv6" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
                     </address>
@@ -331,8 +332,8 @@
                                  <a href="tel:+380961111111" class="contact-footer">+38 096 111 11 11</a>
                            </li>
                      </ul>
-                     </div>
-                     <div class="connect">
+        </div>
+        <div class="connect">
                            <p class="joint-head">ПРИСОЕДИНЯЙТЕСЬ</p>
                               <ul style="padding: 0" class="none flex ">
                               <li class="social-item">
@@ -364,15 +365,58 @@
                             </a>
                             </li>
                 </ul>
-            </div>
+        </div>
+        <div class="subscribe">
+            <form action="#">
+                    <p class="subscribe-p">Подпишитесь на рассылку</p>
+             <input type="email" name="user-email" id="user-email" class="modal-form-input-footer" placeholder="E-mail">          
+            <button type="submit" class="modal-form-btn-footer">Подписаться</button>
+            </form>
+        </div>
     </section>
 </footer>
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-        <button type="button" class="close-button" data-modal-close>X</button>
-    </div>
-</div>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">      
+            <p class="modal-head">Оставьте свои данные, мы вам перезвоним</p>
+            <button type="button" class="close-button" data-modal-close>X</button>
+            <form action="#" class="model-feor">
 
+                <div class="modal-form-field">
+                    <label class="modal-form-input-label" for="user-name">Имя</label>
+                    <input type="text" name="user-name" id="user-name" class="modal-form-input">
+                    <span class="modal-form-icon"></span>
+                </div>
+
+                <div class="modal-form-field">
+                    <label class="modal-form-input-label" for="user-phone">Телефон</label>
+                    <input type="tel" name="user-phone" id="user-phone" class="modal-form-input">
+                    <span class="modal-form-icon"></span>
+                </div>
+
+                <div class="modal-form-field">
+                    <label class="modal-form-input-label" for="user-phone">Почта</label>
+                    <input type="email" name="user-email" id="user-email" class="modal-form-input">
+                    <span class="modal-form-icon"></span>
+                </div>
+                <div class="modal-form-field">
+                    <label class="modal-form-input-label" for="user-message">Комментарий</label>
+                    <textarea name="user-message" id="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+
+                    
+                    <label for="user-policy" class="modal-form-label-check">
+                        <input type="checkbox" name="user-policy" id="user-policy" class="modal-form-check">
+                        <span class="modal-check-span">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
+                    </label>
+
+                    <button  type="submit" class="modal-form-btn">Подписаться 
+                        <svg class="social-svg-footer-sign">
+                            <use xlink:href="./images/sprite-modal.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>    
+            </div>        
+        </div>
 <script src="./js/modal.js"></script>
 </body>
 </html>

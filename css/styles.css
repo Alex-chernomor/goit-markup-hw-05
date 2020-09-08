@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-  
+    margin: 0;
 }
 
 
@@ -29,7 +29,7 @@ img {
 
 body {
     width: 100%;
-    margin: 0;
+    /* margin: 0; */
     background-color: var(--white-color);
     color: var(--text-color);
     font-family: var(--font-family-roboto);
@@ -43,10 +43,10 @@ button {
 }
 
 .none {
-    margin-top: 0;
+    /* margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 0; */
     list-style: none;
 }
 
@@ -64,7 +64,7 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* ========================== modal window =========================== */
 .backdrop {
     position: fixed;
     top: 0;
@@ -79,6 +79,10 @@ button {
   
 }
 
+.modal-head {
+    margin-bottom: 12px;
+}
+
 .modal {
     position: absolute;
     left: 50%;
@@ -90,8 +94,104 @@ button {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
+
+.modal-form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+
+.modal-form-input {
+    
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+  }
+
+.modal-form-input-label {
+  
+    font-size: 12px;
+    line-height: 1.667;
+  
+    letter-spacing: 0.01em;
+    color:var(--esle-color)
+}
+
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: tomato;
+  }
+
+  
+.modal-form-message {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+}
+
+.modal-form-check {
+    margin-top: 20px; ;
+    font-size: 14px;
+    line-height: 1.143px;
+    letter-spacing: 0.01em;
+}
+
+.modal-check-span{   
+    
+    font-size: 14px;
+    line-height: 1.174px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-form-btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color:var(--white-color);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+
+.modal-head {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height:1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.modal-window {    
+   padding: 0 40px;
+}
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -109,7 +209,7 @@ button {
     visibility: hidden;
     pointer-events: none;
 }
-
+/* ===================== modal window happy end =========================== */
 /* ===header=== */
 .header {
     background-color: var(--white-color);
@@ -128,15 +228,9 @@ button {
 .link-nav {
     list-style: none;
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding-left: 0;
     align-items: center;
     text-decoration: none;
 }
-
-
 
 .link-nav li {
     margin-right: 50px;
@@ -146,13 +240,10 @@ button {
     margin-right:0;
 }
 
-
-
 .logoweb {
     padding-top: 24px;
     padding-bottom: 25px;
     padding-left: 0;
-    margin-left: 0;
     margin-right: 93px;
     color: var(--text-color);
     font-family: var(--font-family-railway);
@@ -167,13 +258,8 @@ button {
 
 .nav {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;  
-    padding-left: 0;
     align-items: center;
- 
-}
+ }
 
 .link {
     color:var(--text-color);
@@ -215,8 +301,6 @@ button {
 .contact-nav {
     list-style: none;
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: auto;
     padding-left: 0;
     align-items: center;
@@ -227,10 +311,6 @@ button {
     margin-right: 30px;
     align-items: center;
     justify-content: center;
-}
-
-.contact-nav li:last-child {
-    margin-right:0;
 }
 
 .contact {
@@ -287,7 +367,6 @@ button {
 }
 
 .business-h-one {
-    margin-top: 0;
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 26px;
@@ -325,8 +404,6 @@ button {
 /* ====== section skills ====== */
 
 .skills {
-    margin-top: 0;
-    margin-bottom: 0;
     padding-bottom: 94px;
     background-color: var(--backcolor);
 }
@@ -336,17 +413,12 @@ button {
     display: flex;
     padding-left: 0;
     padding-top: 94px;
-    margin-top: 0;
 }
 
 .business-li-item {
     margin-right: 30px;
     width: 270px;
     height: 101;
-}
-
-.business-li-item:last-child {
-    margin-right: 0;
 }
 
 .skills-container {
@@ -377,7 +449,6 @@ button {
 
 .business-header {
     color: var(--text-color);
-    margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -387,8 +458,6 @@ button {
 
 .business-comment {
     color: var(--esle-color);
-    margin-top: 0;
-    margin-bottom: 0;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -400,20 +469,18 @@ button {
 /* -----------section What we do------------*/
 
 .what-we-do-section {
-    margin-top: 0;
-    margin-bottom: 0;
     padding-bottom: 94px;
     background-color: var(--backcolor);
 }
 
 .what-we-do {
     text-align: center;
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: 50px;
 }
 
 .what-we-do-ul {
-    margin:0;
+    /* margin:0; */
     display: flex;
     flex-wrap: wrap;
     width: calc(100%-60px/3);
@@ -438,12 +505,9 @@ button {
 .text-what-we-do { 
     position: absolute;
     bottom: 0;
-    left: 0;
-    margin: 0;
-    
+    left: 0;    
     width: 370px;
     font-weight: 700;
-    margin: 0;
     padding: 27px 0;
     font-size: 14px;
     line-height: 1.143;
@@ -458,9 +522,6 @@ button {
 /*-------------- section our team -------------- */
 
 .our-team-section {
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
     padding-left: 0;
     padding-bottom: 94px;
     background: var(--backcolor-our-team);
@@ -473,7 +534,7 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: 50px
 }
 
@@ -482,13 +543,7 @@ button {
     padding: 0;
 }
 
-.our-team-ul li:last-child {
-    margin-right:0;
-}
 .our-team {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
     margin-right: 30px;
     list-style: none;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -542,7 +597,7 @@ button {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: 10px;
     padding-top: 30px;
 }
@@ -552,8 +607,8 @@ button {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 0;
+    /* margin-top: 0;
+    margin-bottom: 0; */
     padding-bottom: 30px;
 }
 
@@ -575,12 +630,12 @@ button {
  padding-left: 0;
 }
 
-.client-ul li {
+.client-ul li:not(:last-child) {
     margin-right: 30px;
 }
- .client-ul li:last-child {
+ /* .client-ul li:last-child {
      margin-right: 0;
- }
+ } */
 
 .client-header {    
     font-weight: 700px;
@@ -636,11 +691,6 @@ button {
     font-style: normal;
 }
 
-.logo-footer-h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .logoweb-footer {
     display: inline-block;
     padding-top: 60px; 
@@ -665,7 +715,7 @@ button {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: 9px;
 }
 
@@ -688,13 +738,12 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-right: 0;
-    margin-top: 0;
     margin-bottom: 20px;
 }
 
 .connect {
     margin-top: 72px;
+    margin-right: 93px;
 }
 
 .footer-item .social-item-svg {
@@ -714,6 +763,58 @@ button {
 .connect-item:hover
 .connect-item:focus {
     background-color: #2196F3;
+}
+
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+}
+.subscribe-p{
+    margin-top: 72px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.social-svg-footer-sign {
+    width: 24px;
+    height: 24px;
+    background-color:red;
+}
+
+.modal-form-input-footer {
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 358px;
+    height: 50px;
+       
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+}
+
+.modal-form-btn-footer {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color:var(--white-color);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 /* ---------------------------footer happy end------------------------------------- */
 
@@ -738,10 +839,6 @@ button {
 
 .button-portfolio-li {
     margin-right: 8px;
-}
-
-.button-portfolio-li:last-child {
-    margin-right: 0;
 }
 
 .button-portfolio {
@@ -810,7 +907,6 @@ button {
 .overlay {
     position: absolute;
     padding: 63px 27px;
-    margin: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -855,7 +951,7 @@ button {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: 4px;
     padding-top: 20px
 }
@@ -865,7 +961,7 @@ button {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     padding-bottom: 20px;
-    margin-top: 0;
+    /* margin-top: 0; */
 }
