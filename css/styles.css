@@ -764,6 +764,9 @@ button {
 .subscribe {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .subscribe-p{
     margin-top: 72px;
@@ -781,7 +784,7 @@ button {
     margin-left: 10px;
     width: 24px;
     height: 24px;
-    background-color: red;
+    margin: auto;
 }
 
 .modal-form-input-footer {
