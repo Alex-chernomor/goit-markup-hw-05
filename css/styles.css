@@ -798,7 +798,6 @@ button {
 }
 
 .modal-form-btn-footer {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
