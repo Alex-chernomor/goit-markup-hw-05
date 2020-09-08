@@ -475,12 +475,10 @@ button {
 
 .what-we-do {
     text-align: center;
-    /* margin-top: 0; */
     margin-bottom: 50px;
 }
 
 .what-we-do-ul {
-    /* margin:0; */
     display: flex;
     flex-wrap: wrap;
     width: calc(100%-60px/3);
@@ -534,7 +532,6 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    /* margin-top: 0; */
     margin-bottom: 50px
 }
 
@@ -597,7 +594,6 @@ button {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    /* margin-top: 0; */
     margin-bottom: 10px;
     padding-top: 30px;
 }
@@ -607,8 +603,6 @@ button {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    /* margin-top: 0;
-    margin-bottom: 0; */
     padding-bottom: 30px;
 }
 
@@ -642,8 +636,42 @@ button {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
+/* *********************************************************************** */
+.clients-list .clients-item {
+    width: calc((100% - 150px) / 6);
+}
 
-.client-item-a {
+.clients-list .clients-item:not(:nth-child(6n)) {
+    margin-right: 30px;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid orangered;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: green;
+
+    transition:  3250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+}
+
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: black;
+    color: blue;
+}
+/* ******************************************************************************** */
+/* .client-item-a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -651,15 +679,16 @@ button {
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    color: #afb1b8;
 
+    transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .client-item-li  {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-svg {
-    --color1: var(--esle-color);
+    fill: var(--esle-color);
 }
 
 .client-item-li .client-item-a:hover,
@@ -670,7 +699,7 @@ button {
 .client-item-li:hover .client-svg,
 .client-item-li:focus .client-svg {
   --color1: var(--link-hover-color);
-}
+} */
 
 
 /* --------------------happy end our client---------------------- */
@@ -764,9 +793,7 @@ button {
 .subscribe {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
 }
 .subscribe-p{
     margin-top: 72px;
@@ -778,6 +805,12 @@ button {
     text-transform: uppercase;
 
     color: #FFFFFF;
+}
+
+.form-fotter {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .social-svg-footer-sign {
@@ -803,17 +836,17 @@ button {
 }
 
 .modal-form-btn-footer {
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     text-align: center;
     width: 200px;
     height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     color:var(--white-color);
     letter-spacing: 0.06em;
 }
@@ -950,7 +983,6 @@ button {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    /* margin-top: 0; */
     margin-bottom: 4px;
     padding-top: 20px
 }
