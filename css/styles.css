@@ -121,14 +121,13 @@ button {
 
 
 .social-svg-footer-sign {
-    top: 11px;
+   top: 11px;
    left: 12px;
    position: absolute;
    width: 18px;
    height: 18px;
    justify-content: center;
    align-items: center;
-   fill: #212121;
    background-color:red;
 }
   
@@ -186,9 +185,9 @@ button {
     color: var(--text-color);
 }
 
-.modal-window {    
+/* .modal-window {    
    padding: 0 40px;
-}
+} */
 
 .close-button {
     position: absolute;
