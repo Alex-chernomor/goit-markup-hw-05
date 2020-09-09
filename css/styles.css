@@ -137,8 +137,9 @@ button {
     outline: none;
 } 
 
-.modal-form-input:focus ~ .social-svg-footer-sign {
+.modal-form-input:focus ~ .social-svg-sign {
     --color1: var(--link-hover-color);
+    background-color:green;
   }
 
 .modal-form-message {
