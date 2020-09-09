@@ -139,7 +139,6 @@ button {
 
 .modal-form-input:focus ~ .social-svg-sign {
     --color1: var(--link-hover-color);
-    background-color:green;
   }
 
 .modal-form-message {
@@ -167,7 +166,6 @@ button {
     margin-left: 12px;
     justify-content: center;
     align-items: center;
-    background-color:red;
 }
 
 .social-svg-footer-sign{
